@@ -6,10 +6,10 @@ In this project you will use the iTunes lookup api get a song url and then play 
 ### Details
 
 1. You are given a songs.js file with a list of song ids.  Use the song ids and the itunes lookup api to play a random song.
-2. Start playing the song and present the user with a input field to guess the song name, artist name, or albumn name.
-3. Tell the user if the guess was correct, or incorrect.  Also, show the song title, artist name, albumn name and albumn cover art on the same page.
+2. Start playing the song and present the user with a input field to guess the song name, artist name, or album name.
+3. Tell the user if the guess was correct, or incorrect.  Also, show the song title, artist name, album name and album cover art on the same page.
 4. Make a stats screen that tells the user how many guesses were correct or incorrect.
-5. Style the page so that the game looks appealing
+5. Style the page so that the game looks appealing.
 
 ### Bonus
 
