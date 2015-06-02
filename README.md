@@ -16,12 +16,24 @@ In this project you will use the iTunes lookup api get a song url and then play 
 1. Investigate a styling library like bootstrap and use it in your app.
 2. Make the stats data persist so that it stays on my browser even if I refresh.  This will require learning about browser local storage.
 3. Improve the stats tab to keep a history of every song that was played, and if it was correct or incorrect.  Allow the user to play the preview of any song in the stats tab.
+4. 
 
 ### Hints
 
-1. The itunes api that you will use is the lookup api.  You can search google for itunes preview api.
-2. The itunes api does not support cors.  You will have to make a jsonp request.  Here are the [jquery docs on jsonp](https://learn.jquery.com/ajax/working-with-jsonp/).
-3. In order to play audio, you will need an audio tag on the page.  An audio tag looks like this:
+* The itunes api that you will use is the lookup api.  You can search google for itunes preview api.
+* The itunes api does not support cors.  You will have to make a jsonp request.  Here are the [jquery docs on jsonp](https://learn.jquery.com/ajax/working-with-jsonp/).  Below is a sample jsonp request to the itunes api:
+
+```
+$.ajax({
+   url: "https://itunes.apple.com/search?term=jack+johnson",
+   jsonp: "callback",
+   dataType: "jsonp"
+}).done(function(data) {
+   console.log(data);
+});
+```
+
+* In order to play audio, you will need an audio tag on the page.  An audio tag looks like this:
 
 ```
 <audio id="audio_preview" src="http://a632.phobos.apple.com/us/r1000/103/Music/3c/df/1f/mzm.aqrqqzxn.aac.p.m4a"></audio>
