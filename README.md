@@ -32,4 +32,10 @@ To play the audio file in javascript:
 ```
 // This works since the tag above has the id of audio_preview
 $("#audio_preview")[0].play();
+
+// The above example will only work when the audio has been loaded at least partially.  
+// Here is an example that waits until the audio can be played
+$("#audio_preview").on("canplay", function() {
+  $("#audio_preview")[0].play();
+});
 ```
