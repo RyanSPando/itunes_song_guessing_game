@@ -1,6 +1,6 @@
 # iTunes Song Guessing Game
 
-In this project you will use the iTunes lookup api get a song url and then play the song for the user.  The user should guess the song title, artist name or album.
+In this project you will use the iTunes lookup api to get a song url and then play the song for the user.  The user should guess the song title, artist name or album.
 
 
 ### Details
@@ -12,7 +12,7 @@ In this project you will use the iTunes lookup api get a song url and then play 
 5. Style the page so that the game looks appealing.
 
 ### Bonus
-1. Advanced matching.  Make your check for song matches more permissive.  For example, the song Happy (Dispicable Me 2), should still be correct if the user types Happy.  You can accomplish this by splitting the string and looking at each word, or by using regular expressions (Regular expressions is more challenging but useful to learn).
+1. Advanced matching.  Make your check for song matches more permissive.  For example, the song Happy (Despicable Me 2), should still be correct if the user types Happy.  You can accomplish this by splitting the string and looking at each word, or by using regular expressions (Regular expressions is more challenging, but useful to learn).
 2. Investigate a styling library like bootstrap and use it in your app.
 3. Make the stats data persist so that it stays on my browser even if I refresh.  This will require learning about browser local storage.
 4. Improve the stats tab to keep a history of every song that was played, and if it was correct or incorrect.  Allow the user to play the preview of any song in the stats tab. 
