@@ -22,7 +22,7 @@ In this project you will use the iTunes lookup api to get a song url and then pl
 * The itunes api that you will use is the lookup api.  You can search google for itunes preview api.
 * The itunes api does not support cors.  You will have to make a jsonp request.  Here are the [jquery docs on jsonp](https://learn.jquery.com/ajax/working-with-jsonp/).  Below is a sample jsonp request to the itunes api:
 
-```
+```javascript
 $.ajax({
    url: "https://itunes.apple.com/search?term=jack+johnson",
    jsonp: "callback",
@@ -34,13 +34,13 @@ $.ajax({
 
 * In order to play audio, you will need an audio tag on the page.  An audio tag looks like this:
 
-```
+```html
 <audio id="audio_preview" src="http://a632.phobos.apple.com/us/r1000/103/Music/3c/df/1f/mzm.aqrqqzxn.aac.p.m4a"></audio>
 ```
 
 To play the audio file in javascript:
 
-```
+```javascript
 // This works since the tag above has the id of audio_preview
 $("#audio_preview")[0].play();
 
